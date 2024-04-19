@@ -1,0 +1,21 @@
+[graph]
+introspection = true
+
+[operation_limits]
+depth = 10
+height = 12
+aliases = 5
+root_fields = 6
+complexity = 2
+
+[rate_limits]
+enabled = true
+rate = 60
+burst = 60
+period = 60
+
+[subgraphs.products]
+url = "http://localhost:4001/graphql"
+
+[subgraphs.reviews]
+url = "http://localhost:4002/graphql"
